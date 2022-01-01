@@ -1,0 +1,75 @@
+<! simple html document>
+<! note: all these are elements and attributes>
+<!DOCTYPE html> <! initializes html for browser to access>
+<html lang="en-US"> <! root element of the html page; contains lang attribute that specifies the language and country the website is in>
+
+<head> <! header element that consists of title; shown in tab or url of browser>
+<link rel="stylesheet" href="styles.css"> <! example of external css>
+<style>
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: red;}
+</style> <! example of internal css in html>
+<title>Page Title</title>
+</head>
+
+<body style="background-color: lightblue;"> <! first body element that consists of a heading and a paragraph; shown on web page>
+
+<h1 style="border: 4px solid tomato;">My first heading</h1>
+<a href="https://www.w3schools.com/html/html_headings.asp" target="__blank" title="Go to W3Schools Tutorial">This is a link to the W3Schools tutorial</a> <! the href attribute allows the access of links on the web page>
+<style>
+    a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:visited {
+        color: blue;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:active {
+        color: green;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    a:link, a:visited {
+        background-color: tomato;
+        color: white;
+        padding: 20px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    a:hover, a:active {
+        background-color: green;
+    }
+</style> <! different styles for link statuses including how the button reacts depending on them>
+<h2>My second heading</h2>
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"> <! src attribute allows for an image to display on the web page;
+ in this case contains an alternate text or attribute to display if initial image cannot load up and has width and height attributes>
+<h3>My third heading</h3>
+<p>My first paragraph</p>
+<p style="color:blue;">This is a blue paragraph</p> <! style attribute allows for color, font, size, etc. of paragraphs>
+<p title="This is a paragraph title">This is another paragraph</p> <! title attribute that displays when cursor hovers over the text>
+<br> <! an empty element; used as a line breaker; kind of like newline from python>
+<h4 style="font-size:60px; background-color: yellow;">Heading 4</h4>
+<hr> <! horizontal line>
+<p>This is<br>the<br>fourth paragraph</p>
+<pre style="background-color: white; color: green; font-family: Arial, Helvetica, sans-serif; text-align: center;"> <! allows for preformatted text to remain the same; w/ css attributes>
+    Demonstrates the
+
+    preformatted text.
+</pre>
+
+<b>Heading 5</b> <! bold heading>
+<p>My favorite color is <del>blue</del> <ins>yellow</ins> or red</p>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+</body>
+
+</html>

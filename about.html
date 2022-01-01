@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+    <title>Nelson Booth</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+<section class="sub-header-1">
+    <nav>
+        <a href="index.html"><img src="images/Personal Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="contacts.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<!---about--->
+<div class="about">
+    <h1>About Me</h1>
+    <p>I am currently a freshmen student at the University of California: Santa Cruz studying in Computer Science at the Jack Baskin School of Engineering.<br>
+    My programming experience currently entails Python, HTML, and CSS although I do plan on learning and studying more programming languages such as C, C++, and JavaScript.<br>
+    I've also had some hardware experience as I built my very own gaming PC which I have poured tons of hours and time into as a passion project.<br>
+    In my free time, I love to run and have ran for my high school cross country team for multiple seasons as well as participated in the California International Marathon.<br>
+    Another sport that I am also passionate about is basketball as I love playing the sport and watching my favorite NBA team, the Golden State Warriors.<br>
+    I also love to volunteer for my community through various communital organizations such as Key Club, CSF, NHS, and Circle K.<br>
+    In pop culture, I'm a huge Star Wars and the Weeknd fan as well as being an avid gamer, playing games such as Call of Duty, NBA2k, and Halo.<br>
+    </p>
+</div>
+
+<div class="about-links">
+    <a href="https://github.com/starwarsfan1233" target="_blank" type="button" class="button-1">
+        <span class="button-1-text">Github</span>
+        <span class="button-1-icon">
+            <i class="fab fa-github"></i>
+        </span>
+    </a>
+    
+    <a href="https://www.linkedin.com/in/nelson-booth-637551222/" target="_blank" type="button" class="button-2">
+        <span class="button-2-text">LinkedIn</span>
+        <span class="button-2-icon">
+            <i class="fab fa-linkedin"></i>
+        </span>
+    </a>
+    <a href="https://www.instagram.com/nelson_booth21/" target="_blank" type="button" class="button-3">
+        <span class="button-3-text">Instagram</span>
+        <span class="button-3-icon">
+            <i class="fab fa-instagram"></i>
+        </span>
+    </a>
+</div>
+
+</section>
+
+<!--------JavaScript for toggle menu---------->
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
