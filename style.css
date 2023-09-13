@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url(images/background.jpg);
+    background-image: rgb(128, 0, 128);
     background-position: center;
     background-size: cover;
     position: relative;
