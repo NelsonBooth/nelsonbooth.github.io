@@ -10,31 +10,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 </head>
 <body>
-<section class="header">
-    <nav>
-        <a href="index.html"><img src="images/Personal Logo.png"></a>
-        <div class="nav-links" id="navLinks">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="contacts.html">CONTACT</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-            </ul>
-        </div>
-    </nav>
-
-<div class="text-box">
-    <h1>Hello there! I'm Nelson Booth!</h1>
-</div>
-
-<div class="btn">
-    <a href="about.html" target="_blank">
-        <button type="button" class="button"><h3>Click to Learn More About Me!</h3></button>
-    </a>
-</div>
-
-</section>
-
-</body>
-</html>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/Personal Logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="contacts.html">CONTACT</a></li>
+                    <li><a href="resume.html">RESUME</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>Hello there! I'm Nelson Booth!</h1>
+        <a href="about.html" class="header-button">Click Here to Learn More</a>
+    </div>
+    </section>
+    
+    <!--------JavaScript for toggle menu---------->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+    </body>
+    </html>
