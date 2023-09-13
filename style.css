@@ -25,11 +25,6 @@
     }
 }
 
-/*---text-box---*/
-.text-box{
-    color: rgb(255, 255, 255);
-}
-
 /*---sub-header-1---*/
 .sub-header-1 {
     min-height: 100vh;
@@ -101,12 +96,7 @@ nav img{
 }
 .text-box h1{
     font-size: 92px;
-    color: rgb(148, 148, 238);
-}
-.text-box p{
-    margin: 10px 0 40px;
-    font-size: 44px;
-    color: lightblue;
+    color: white;
 }
 .header-button{
     display: inline-block;
@@ -124,7 +114,7 @@ nav img{
 }
 .header-button:hover{
     border: 5px solid white;
-    background: lightblue;
+    background: black;
 }
 nav .fa{
     display: none;
