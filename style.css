@@ -6,6 +6,14 @@
 html {
     scroll-behavior: smooth;
 }
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /*---header---*/
 .header{
@@ -18,14 +26,6 @@ html {
     animation: fadeInAnimation ease .75s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 /*---about-header---*/
@@ -70,6 +70,7 @@ html {
 
 
 
+/*---NavBar---*/
 nav{
     display: flex;
     padding: 2% 6%;
@@ -82,6 +83,9 @@ nav{
     background-color: black;
     z-index: 1000;
     height: 80px;
+    animation: fadeInAnimation ease .75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 nav img{
     width: 150px;
@@ -99,7 +103,7 @@ nav img{
 .nav-links ul li a{
     color: lightblue;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 23px;
 }
 .nav-links ul li::after{
     content: '';
@@ -116,6 +120,7 @@ nav img{
 
 
 
+/*---text-box---*/
 .text-box{
     width: 90%;
     color: white;
@@ -143,6 +148,7 @@ nav img{
 
 
 
+/*---about-box---*/
 .about-box{
     width: 90%;
     color: white;
@@ -159,6 +165,7 @@ nav img{
 
 
 
+/*---header-button---*/
 .header-button{
     display: inline-block;
     text-decoration: none;
@@ -170,8 +177,6 @@ nav img{
     position: relative;
     cursor: pointer;
     margin-top: 30px;
-}
-.header-button {
     transition-duration: .5s;
 }
 .header-button:hover{
@@ -184,11 +189,27 @@ nav .fa{
 
 
 
-/*--mobile--*/
-@media(max-width: 700px){
+/*---mpbile---*/
+@media screen and (max-width: 1024px){
     .text-box h1{
+        font-size: 35px;
+    }
+    .p1{
+        font-size: 30px;
+    }
+    .p2{
         font-size: 20px;
     }
+
+    .about-box h2{
+        font-size: 35px;
+    }
+
+    .header-button{
+        padding: 17px 35px;
+        font-size: 22px;
+    }
+
     .nav-links ul li{
         display: block;
     }
@@ -212,6 +233,46 @@ nav .fa{
     }
     .nav-links ul{
         padding: 30px;
+    }
+}
+
+@media screen and (max-height: 844px){
+    .text-box h1{
+        font-size: 25px;
+    }
+    .p1{
+        font-size: 20px;
+    }
+    .p2{
+        font-size: 15px;
+    }
+
+    .about-box h2{
+        font-size: 25px;
+    }
+
+    .header-button{
+        padding: 13px 27px;
+        font-size: 15px;
+        border: 3px solid white;
+    }
+    .header-button:hover{
+        border: 3px solid white;
+        background: black;
+    }
+}
+
+@media screen and (max-height: 500px){
+    html{
+        scroll-behavior: auto;
+    }
+    .header{
+        height: auto;
+        width: auto;
+    }
+    .about-header{
+        height: auto;
+        width: auto;
     }
 }
 
