@@ -180,8 +180,8 @@ nav img{
     transition-duration: .5s;
 }
 .header-button:hover{
-    border: 5px solid white;
     background: black;
+    transition-duration: .2s;
 }
 nav .fa{
     display: none;
@@ -189,8 +189,8 @@ nav .fa{
 
 
 
-/*---mpbile---*/
-@media screen and (max-width: 1024px){
+/*---tablets---*/
+@media only screen and (max-width: 1068px){
     .text-box h1{
         font-size: 35px;
     }
@@ -208,6 +208,14 @@ nav .fa{
     .header-button{
         padding: 17px 35px;
         font-size: 22px;
+    }
+    .header-button:hover{
+        background: transparent;
+        transition-duration: .2s;
+    }
+
+    .header, .about-header{
+        width: 100%;
     }
 
     .nav-links ul li{
@@ -236,7 +244,8 @@ nav .fa{
     }
 }
 
-@media screen and (max-height: 844px){
+/*---mobile phones---*/
+@media only screen and (max-height: 900px){
     .text-box h1{
         font-size: 25px;
     }
@@ -251,28 +260,18 @@ nav .fa{
         font-size: 25px;
     }
 
+    .header, .about-header{
+        width: 100%;
+    }
+
     .header-button{
         padding: 13px 27px;
         font-size: 15px;
         border: 3px solid white;
     }
     .header-button:hover{
-        border: 3px solid white;
-        background: black;
-    }
-}
-
-@media screen and (max-height: 500px){
-    html{
-        scroll-behavior: auto;
-    }
-    .header{
-        height: auto;
-        width: auto;
-    }
-    .about-header{
-        height: auto;
-        width: auto;
+        background: transparent;
+        transition-duration: .1s;
     }
 }
 
