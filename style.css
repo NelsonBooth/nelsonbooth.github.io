@@ -373,8 +373,11 @@ nav .fa{
         width: 100%;
     }*/
 
+    nav{
+        padding: 5% 10%;
+    }
     nav img {
-        width: 95px;
+        width: 125px;
     }
 
     /*---SideNav---*/
@@ -569,9 +572,9 @@ nav .fa{
     100% {
         opacity: 1;
     }
-}*/
+}
 
-/*---contact---*/
+---contact---
 .contact {
     height: 50vh;
     width: 100%;
@@ -587,4 +590,4 @@ nav .fa{
     100% {
         opacity: 1;
     }
-}
+}*/
