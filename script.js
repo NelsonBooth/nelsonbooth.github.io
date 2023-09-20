@@ -1,11 +1,17 @@
 /*---JavaScript for toggle menu---*/
-    var navLinks = document.getElementById("navLinks")
-    function showMenu(){
-        navLinks.style.right = "0"
-    };
-    function hideMenu(){
-        navLinks.style.right = "-200px"
-    };
+function showMenu(){
+    var navLinks = document.getElementById("navLinks");
+    navLinks.style.right = "0";
+}
+
+function hideMenu(){
+    var navLinks = document.getElementById("navLinks");
+    navLinks.style.right = "-200px";
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+
+});
 
 /*---JavaScript for Smooth Scrolling---*/
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

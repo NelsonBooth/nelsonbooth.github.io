@@ -12,20 +12,22 @@
     <script src="script.js"></script>
 </head>
 <body>
+
+    <nav>
+        <a href="#home"><img src="images/Personal Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contacts.html">CONTACT</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
     <section id="home" class="header">
-        <nav>
-            <a href="#home"><img src="images/Personal Logo.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="contacts.html">CONTACT</a></li>
-                    <li><a href="resume.html">RESUME</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
         
         <div class="text-box">
             <h1>Hello there! I'm Nelson!</h1>
@@ -35,29 +37,17 @@
             <p class="p2">"Let the future tell the truth, and evaluate each one according
             to his work and accomplishments. <br>The present is theirs; the future, for which
             I have really worked, is mine." - Nikola Tesla</p>
-            <a href="#about" class="header-button">Click Here to Learn More About Me!</a>
+            <a href="#about" id="HeaderButton" class="header-button">Click Here to Learn More About Me!</a>
         </div>
 
     </section>
 
     <section id="about" class="about-header">
-        <nav>
-            <a href="#home"><img src="images/Personal Logo.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="contacts.html">CONTACT</a></li>
-                    <li><a href="resume.html">RESUME</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
 
         <div class="about-box">
             <h2>Who am I?</h2>
         </div>
+
     </section>
     
     </body>
