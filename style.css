@@ -248,7 +248,11 @@ nav .fa{
         cursor: pointer;
     }
     .nav-links ul{
+        text-align: center;
         padding: 30px;
+    }
+    .nav-links ul li:hover::after{
+        width: 90%;
     }
 }
 
