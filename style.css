@@ -54,6 +54,19 @@ html {
     animation-fill-mode: forwards;
 }
 
+/*---skills-header---*/
+.skills-header {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(128, 0, 128);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: fadeInAnimation ease .75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 /*---contact-header---*/
 .contact-header {
     min-height: 100vh;
@@ -181,6 +194,23 @@ nav img{
 
 
 
+/*---skills-box---*/
+.skills-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-12%, -7%);
+    text-align: left;
+}
+.skills-box h4 {
+    font-size: 80px;
+    color: white;
+}
+
+
+
 /*---contact-box---*/
 .contact-box {
     width: 90%;
@@ -191,9 +221,14 @@ nav img{
     transform: translate(-12%, -7%);
     text-align: left;
 }
-.contact-box h4 {
+.contact-box h5 {
     font-size: 80px;
     color: white;
+}
+.contact-box #linkedInLogo {
+    width: 75px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 
@@ -246,7 +281,11 @@ nav .fa{
         font-size: 35px;
     }
 
-    .contact-box h4{
+    .skills-box h4{
+        font-size: 35px;
+    }
+
+    .contact-box h5{
         font-size: 35px;
     }
 
@@ -265,6 +304,10 @@ nav .fa{
 
     .header, .about-header{
         width: 100%;
+    }
+
+    nav img {
+        width: 95px;
     }
 
     /*---SideNav---*/
@@ -317,7 +360,11 @@ nav .fa{
         font-size: 25px;
     }
 
-    .contact-box h4{
+    .skills-box h4{
+        font-size: 25px;
+    }
+
+    .contact-box h5{
         font-size: 25px;
     }
 
