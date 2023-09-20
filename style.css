@@ -231,6 +231,11 @@ nav img{
     margin-top: 150px;
     margin-left: 50px;
 }
+.contact-box #linkedInLogo {
+    font-size: 100px;
+    width: 10px;
+    margin-left: 350px;
+}
 
 
 
@@ -294,6 +299,11 @@ nav .fa{
         width: 10px;
         margin-top: 125px;
         margin-left: 50px;
+    }
+    .contact-box #linkedInLogo {
+        font-size: 75px;
+        width: 10px;
+        margin-left: 250px;
     }
 
     .header-button{
@@ -379,6 +389,11 @@ nav .fa{
         width: 10px;
         margin-top: 75px;
         margin-left: 50px;
+    }
+    .contact-box #linkedInLogo {
+        font-size: 50px;
+        width: 10px;
+        margin-left: 150px;
     }
 
     .header-button{
