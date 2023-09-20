@@ -17,6 +17,15 @@ html {
 
 /*---header---*/
 .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     min-height: 100vh;
     width: 100%;
     background-color: rgb(128, 0, 128);
@@ -30,6 +39,15 @@ html {
 
 /*---about-header---*/
 .about-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     min-height: 100vh;
     width: 100%;
     background-color: rgb(128, 0, 128);
@@ -43,6 +61,15 @@ html {
 
 /*---projects-header---*/
 .projects-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     min-height: 100vh;
     width: 100%;
     background-color: rgb(128, 0, 128);
@@ -56,6 +83,15 @@ html {
 
 /*---skills-header---*/
 .skills-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     min-height: 100vh;
     width: 100%;
     background-color: rgb(128, 0, 128);
@@ -69,6 +105,15 @@ html {
 
 /*---contact-header---*/
 .contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     min-height: 100vh;
     width: 100%;
     background-color: rgb(128, 0, 128);
@@ -269,7 +314,7 @@ nav .fa{
 
 /*---tablets---*/
 @media only screen and (max-width: 1068px){
-    .text-box h1{
+    /*.text-box h1{
         font-size: 35px;
     }
     .p1{
@@ -293,7 +338,12 @@ nav .fa{
 
     .contact-box h5{
         font-size: 35px;
+    }*/
+
+    .header, .about-header, .projects-header, .skills-header, .contact-header{
+        padding: 30% 30%;
     }
+
     .contact-box #gitHubLogo {
         font-size: 75px;
         width: 10px;
@@ -306,7 +356,7 @@ nav .fa{
         margin-left: 250px;
     }
 
-    .header-button{
+    /*.header-button{
         padding: 17px 35px;
         font-size: 22px;
     }
@@ -321,7 +371,7 @@ nav .fa{
 
     .header, .about-header{
         width: 100%;
-    }
+    }*/
 
     nav img {
         width: 95px;
@@ -359,7 +409,7 @@ nav .fa{
 
 /*---mobile phones---*/
 @media only screen and (max-height: 1000px){
-    .text-box h1{
+    /*.text-box h1{
         font-size: 25px;
     }
     .p1{
@@ -383,7 +433,12 @@ nav .fa{
 
     .contact-box h5{
         font-size: 25px;
+    }*/
+
+    .header, .about-header, .projects-header, .skills-header, .contact-header{
+        padding: 70% 70%;
     }
+
     .contact-box #gitHubLogo {
         font-size: 50px;
         width: 10px;
@@ -396,7 +451,7 @@ nav .fa{
         margin-left: 150px;
     }
 
-    .header-button{
+    /*.header-button{
         padding: 13px 27px;
         font-size: 15px;
         border: 3px solid white;
@@ -408,7 +463,7 @@ nav .fa{
     .header-button:active{
         background: black;
         transition-duration: .1s;
-    }
+    }*/
 }
 
 
