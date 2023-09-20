@@ -225,9 +225,10 @@ nav img{
     font-size: 80px;
     color: white;
 }
-.contact-box #linkedInLogo {
-    width: 75px;
-    margin-top: 50px;
+.contact-box #gitHubLogo {
+    font-size: 125px;
+    width: 10px;
+    margin-top: 150px;
     margin-left: 50px;
 }
 
@@ -287,6 +288,12 @@ nav .fa{
 
     .contact-box h5{
         font-size: 35px;
+    }
+    .contact-box #gitHubLogo {
+        font-size: 75px;
+        width: 10px;
+        margin-top: 125px;
+        margin-left: 50px;
     }
 
     .header-button{
@@ -366,6 +373,12 @@ nav .fa{
 
     .contact-box h5{
         font-size: 25px;
+    }
+    .contact-box #gitHubLogo {
+        font-size: 50px;
+        width: 10px;
+        margin-top: 75px;
+        margin-left: 50px;
     }
 
     .header-button{
