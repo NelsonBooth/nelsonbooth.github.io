@@ -6,7 +6,7 @@ function showMenu(){
 
 function hideMenu(){
     var navLinks = document.getElementById("navLinks");
-    navLinks.style.right = "-200px";
+    navLinks.style.right = "-20%";
 }
 
 document.addEventListener("DOMContentLoaded", function(){

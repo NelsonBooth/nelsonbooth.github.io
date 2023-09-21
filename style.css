@@ -383,10 +383,10 @@ nav .fa{
     .nav-links{
         position: absolute;
         background: black;
-        height: 100vh;
-        width: 200px;
+        height: 1000vh;
+        width: 20%;
         top: 0;
-        right: -200px;
+        right: -20%;
         text-align: left;
         transition: .5s;
     }
