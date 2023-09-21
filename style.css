@@ -359,7 +359,7 @@ nav .fa{
     /*.header-button{
         padding: 17px 35px;
         font-size: 22px;
-    }
+    }*/
     .header-button:hover{
         background: transparent;
         transition-duration: .1s;
@@ -368,10 +368,6 @@ nav .fa{
         background: black;
         transition-duration: .1s;
     }
-
-    .header, .about-header{
-        width: 100%;
-    }*/
 
     nav{
         padding: 5% 10%;
@@ -458,7 +454,7 @@ nav .fa{
         padding: 13px 27px;
         font-size: 15px;
         border: 3px solid white;
-    }
+    }*/
     .header-button:hover{
         background: transparent;
         transition-duration: .1s;
@@ -466,7 +462,7 @@ nav .fa{
     .header-button:active{
         background: black;
         transition-duration: .1s;
-    }*/
+    }
 }
 
 
