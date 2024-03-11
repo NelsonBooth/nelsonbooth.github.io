@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*---header---*/
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(128, 0, 128);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: fadeInAnimation ease .75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/*---about-header---*/
+.about-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(128, 0, 128);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: fadeInAnimation ease .75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/*---projects-header---*/
+.projects-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(128, 0, 128);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: fadeInAnimation ease .75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/*---skills-header---*/
+.skills-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(128, 0, 128);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: fadeInAnimation ease .75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/*---contact-header---*/
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(128, 0, 128);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: fadeInAnimation ease .75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+
+/*---NavBar---*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 1;
+    height: 80px;
+    animation: fadeInAnimation ease .75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: lightblue;
+    text-decoration: none;
+    font-size: 23px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+
+/*---text-box---*/
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-12%, -7%);
+    text-align: left;
+    margin-top: 30px;
+}
+.text-box h1{
+    font-size: 80px;
+    color: white;
+}
+.p1 {
+    font-size: 50px;
+    color: white;
+    margin-top: 10px;
+}
+.p2{
+    font-size: 30px;
+    color: lightblue;
+    margin-bottom: 10px;
+}
+
+
+
+/*---about-box---*/
+.about-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-12%, -7%);
+    text-align: left;
+}
+.about-box h2 {
+    font-size: 80px;
+    color: white;
+}
+
+
+
+/*---projects-box---*/
+.projects-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-12%, -7%);
+    text-align: left;
+}
+.projects-box h3 {
+    font-size: 80px;
+    color: white;
+}
+
+
+
+/*---skills-box---*/
+.skills-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-12%, -7%);
+    text-align: left;
+}
+.skills-box h4 {
+    font-size: 80px;
+    color: white;
+}
+
+
+
+/*---contact-box---*/
+.contact-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-12%, -7%);
+    text-align: left;
+}
+.contact-box h5 {
+    font-size: 80px;
+    color: white;
+}
+.contact-box #gitHubLogo {
+    font-size: 125px;
+    width: 10px;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+.contact-box #linkedInLogo {
+    font-size: 100px;
+    width: 10px;
+    margin-left: 350px;
+}
+
+
+
+/*---header-button---*/
+.header-button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 5px solid white;
+    padding: 22px 44px;
+    font-size: 23px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 30px;
+    transition-duration: .5s;
+}
+.header-button:hover{
+    background: black;
+    transition-duration: .2s;
+}
+.header-button:active{
+    background: transparent;
+    transition-duration: .2s;
+}
+nav .fa{
+    display: none;
+}
