@@ -3,12 +3,116 @@
     padding: 0;
     font-family: 'Noto Sans Display', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
+    }
+}
+
+/*---media---*/
+@media only screen and (max-height: 867px) {
+    .header, .about-header {
+        padding: 30% 30%;
+        min-height: 50vh;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .text-box h1{
+        font-size: 18px;
+    }
+    .text-box p {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 5% 10%;
+    }
+    nav img {
+        width: 125px;
+    }
+    /*---SideNav---*/
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: black;
+        height: 1000vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        transition: .5s;
+    }
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        text-align: center;
+        padding: 30px;
+    }
+    .nav-links ul li:hover::after {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 867px) {
+    .header, .about-header {
+        padding: 30% 30%;
+        min-height: 50vh;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .text-box h1{
+        font-size: 18px;
+    }
+    .text-box p {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 5% 10%;
+    }
+    nav img {
+        width: 125px;
+    }
+    /*---SideNav---*/
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: black;
+        height: 1000vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        transition: .5s;
+    }
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        text-align: center;
+        padding: 30px;
+    }
+    .nav-links ul li:hover::after {
+        width: 90%;
     }
 }
 
@@ -56,28 +160,6 @@
     animation-fill-mode: forwards;
 }
 
-/*---projects-header---*/
-.projects-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10% 0%;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100vh;
-    width: 100%;
-    background-color: rgb(128, 0, 128);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    animation: fadeInAnimation ease .75s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
 /*---skills-header---*/
 .skills-header {
     display: flex;
@@ -100,8 +182,8 @@
     animation-fill-mode: forwards;
 }
 
-/*---contact-header---*/
-.contact-header {
+/*---projects-header---*/
+.projects-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,8 +203,6 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-
-
 
 /*---NavBar---*/
 nav{
@@ -172,8 +252,6 @@ nav img{
     width: 100%;
 }
 
-
-
 /*---text-box---*/
 .text-box{
     width: 90%;
@@ -186,21 +264,21 @@ nav img{
     margin-top: 30px;
 }
 .text-box h1{
-    font-size: 80px;
+    font-size: 70px;
     color: white;
 }
 .p1 {
     font-size: 50px;
     color: white;
     margin-top: 10px;
+    line-height: 2;
 }
 .p2{
     font-size: 30px;
     color: lightblue;
     margin-bottom: 10px;
+    line-height: 2;
 }
-
-
 
 /*---about-box---*/
 .about-box{
@@ -217,8 +295,6 @@ nav img{
     color: white;
 }
 
-
-
 /*---projects-box---*/
 .projects-box{
     width: 90%;
@@ -234,8 +310,6 @@ nav img{
     color: white;
 }
 
-
-
 /*---skills-box---*/
 .skills-box{
     width: 90%;
@@ -249,60 +323,4 @@ nav img{
 .skills-box h4 {
     font-size: 80px;
     color: white;
-}
-
-
-
-/*---contact-box---*/
-.contact-box {
-    width: 90%;
-    color: white;
-    position: absolute;
-    top: 25%;
-    left: 20%;
-    transform: translate(-12%, -7%);
-    text-align: left;
-}
-.contact-box h5 {
-    font-size: 80px;
-    color: white;
-}
-.contact-box #gitHubLogo {
-    font-size: 125px;
-    width: 10px;
-    margin-top: 150px;
-    margin-left: 50px;
-}
-.contact-box #linkedInLogo {
-    font-size: 100px;
-    width: 10px;
-    margin-left: 350px;
-}
-
-
-
-/*---header-button---*/
-.header-button{
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    border: 5px solid white;
-    padding: 22px 44px;
-    font-size: 23px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-    margin-top: 30px;
-    transition-duration: .5s;
-}
-.header-button:hover{
-    background: black;
-    transition-duration: .2s;
-}
-.header-button:active{
-    background: transparent;
-    transition-duration: .2s;
-}
-nav .fa{
-    display: none;
 }
