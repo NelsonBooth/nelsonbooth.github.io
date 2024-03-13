@@ -37,32 +37,41 @@ html {
         width: 125px;
     }
     /*---SideNav---*/
-    .nav-links ul li {
+    .nav-links {
+        position: absolute;
+        background: black;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        transition: right .5s;
+    }
+    .nav-links.show ul li {
         display: block;
     }
-    .nav-links {
+    .nav-links.show {
         position: absolute;
         background: black;
         height: 1000vh;
         width: 200px;
         top: 0;
-        right: -200px;
+        right: 0px;
         text-align: left;
         transition: .5s;
     }
-    nav .fa {
+    .nav-links.show ul {
+        text-align: center;
+        padding: 30px;
+    }
+    .nav-links.show ul li:hover::after {
+        width: 90%;
+    }
+    .menu-icon {
         display: block;
         color: white;
         margin: 10px;
         font-size: 25px;
         cursor: pointer;
-    }
-    .nav-links ul {
-        text-align: center;
-        padding: 30px;
-    }
-    .nav-links ul li:hover::after {
-        width: 90%;
     }
 }
 
@@ -87,32 +96,41 @@ html {
         width: 125px;
     }
     /*---SideNav---*/
-    .nav-links ul li {
+    .nav-links {
+        position: absolute;
+        background: black;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        transition: right .5s;
+    }
+    .nav-links.show ul li {
         display: block;
     }
-    .nav-links {
+    .nav-links.show {
         position: absolute;
         background: black;
         height: 1000vh;
         width: 200px;
         top: 0;
-        right: -200px;
+        right: 0px;
         text-align: left;
         transition: .5s;
     }
-    nav .fa {
+    .nav-links.show ul {
+        text-align: center;
+        padding: 30px;
+    }
+    .nav-links.show ul li:hover::after {
+        width: 90%;
+    }
+    .menu-icon {
         display: block;
         color: white;
         margin: 10px;
         font-size: 25px;
         cursor: pointer;
-    }
-    .nav-links ul {
-        text-align: center;
-        padding: 30px;
-    }
-    .nav-links ul li:hover::after {
-        width: 90%;
     }
 }
 
