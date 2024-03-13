@@ -27,7 +27,7 @@ const App = () => {
   return (
     <div>
       <nav>
-      <a href="#home"><img src={`${process.env.PUBLIC_URL}/Personal Logo.png`} alt="Logo" /></a>
+      <a href="#home" onClick={() => isMenuVisible && toggleMenu()}><img src={`${process.env.PUBLIC_URL}/Personal Logo.png`} alt="Logo" /></a>
         <div className={isMenuVisible ? "nav-links show" : "nav-links"}>
           <FontAwesomeIcon icon={faXmark} onClick={toggleMenu} className="menu-icon"/>
             <ul>

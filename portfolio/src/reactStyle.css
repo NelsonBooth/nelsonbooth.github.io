@@ -155,6 +155,33 @@ html {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+/*---text-box---*/
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-12%, -7%);
+    text-align: left;
+    margin-top: 30px;
+}
+.text-box h1{
+    font-size: 70px;
+    color: white;
+}
+.p1 {
+    font-size: 50px;
+    color: white;
+    margin-top: 10px;
+    line-height: 2;
+}
+.p2{
+    font-size: 30px;
+    color: lightblue;
+    margin-bottom: 10px;
+    line-height: 2;
+}
 
 /*---about-header---*/
 .about-header {
@@ -176,6 +203,20 @@ html {
     animation: fadeInAnimation ease .75s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+/*---about-box---*/
+.about-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-12%, -7%);
+    text-align: left;
+}
+.about-box h2 {
+    font-size: 80px;
+    color: white;
 }
 
 /*---skills-header---*/
@@ -199,6 +240,20 @@ html {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+/*---skills-box---*/
+.skills-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-12%, -7%);
+    text-align: left;
+}
+.skills-box h4 {
+    font-size: 80px;
+    color: white;
+}
 
 /*---projects-header---*/
 .projects-header {
@@ -220,6 +275,20 @@ html {
     animation: fadeInAnimation ease .75s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+/*---projects-box---*/
+.projects-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-12%, -7%);
+    text-align: left;
+}
+.projects-box h3 {
+    font-size: 80px;
+    color: white;
 }
 
 /*---NavBar---*/
@@ -268,77 +337,4 @@ nav img{
 }
 .nav-links ul li:hover::after{
     width: 100%;
-}
-
-/*---text-box---*/
-.text-box{
-    width: 90%;
-    color: white;
-    position: absolute;
-    top: 25%;
-    left: 20%;
-    transform: translate(-12%, -7%);
-    text-align: left;
-    margin-top: 30px;
-}
-.text-box h1{
-    font-size: 70px;
-    color: white;
-}
-.p1 {
-    font-size: 50px;
-    color: white;
-    margin-top: 10px;
-    line-height: 2;
-}
-.p2{
-    font-size: 30px;
-    color: lightblue;
-    margin-bottom: 10px;
-    line-height: 2;
-}
-
-/*---about-box---*/
-.about-box{
-    width: 90%;
-    color: white;
-    position: absolute;
-    top: 25%;
-    left: 20%;
-    transform: translate(-12%, -7%);
-    text-align: left;
-}
-.about-box h2 {
-    font-size: 80px;
-    color: white;
-}
-
-/*---projects-box---*/
-.projects-box{
-    width: 90%;
-    color: white;
-    position: absolute;
-    top: 25%;
-    left: 20%;
-    transform: translate(-12%, -7%);
-    text-align: left;
-}
-.projects-box h3 {
-    font-size: 80px;
-    color: white;
-}
-
-/*---skills-box---*/
-.skills-box{
-    width: 90%;
-    color: white;
-    position: absolute;
-    top: 25%;
-    left: 20%;
-    transform: translate(-12%, -7%);
-    text-align: left;
-}
-.skills-box h4 {
-    font-size: 80px;
-    color: white;
 }
