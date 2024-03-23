@@ -15,27 +15,23 @@ html {
     }
 }
 
-/*---media---*/
-@media only screen and (max-height: 867px) {
+@media (max-width: 867px), (max-height: 867px) {
     .header, .about-header {
         padding: 30% 30%;
         min-height: 50vh;
         flex-wrap: nowrap;
         overflow-x: auto;
     }
-    .text-box h1{
-        font-size: 18px;
+    .text-box h1, .about-box h2, .skills-box h3, .projects-box h4 {
+        font-size: 2.1rem;
     }
-    .text-box p {
-        font-size: 16px;
+    .text-box .p1 {
+        font-size: 1.2rem;
+    }
+    .text-box .p2 {
+        font-size: 1rem;
     }
 
-    nav {
-        padding: 5% 10%;
-    }
-    nav img {
-        width: 125px;
-    }
     /*---SideNav---*/
     .nav-links {
         position: absolute;
@@ -74,65 +70,7 @@ html {
         cursor: pointer;
     }
 }
-
-@media only screen and (max-width: 867px) {
-    .header, .about-header {
-        padding: 30% 30%;
-        min-height: 50vh;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-    }
-    .text-box h1{
-        font-size: 18px;
-    }
-    .text-box p {
-        font-size: 16px;
-    }
-
-    nav {
-        padding: 5% 10%;
-    }
-    nav img {
-        width: 125px;
-    }
-    /*---SideNav---*/
-    .nav-links {
-        position: absolute;
-        background: black;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        transition: right .5s;
-    }
-    .nav-links.show ul li {
-        display: block;
-    }
-    .nav-links.show {
-        position: absolute;
-        background: black;
-        height: 1000vh;
-        width: 200px;
-        top: 0;
-        right: 0px;
-        text-align: left;
-        transition: .5s;
-    }
-    .nav-links.show ul {
-        text-align: center;
-        padding: 30px;
-    }
-    .nav-links.show ul li:hover::after {
-        width: 90%;
-    }
-    .menu-icon {
-        display: block;
-        color: white;
-        margin: 10px;
-        font-size: 25px;
-        cursor: pointer;
-    }
-}
+/*---------------------------------------------------------------------*/
 
 /*---header---*/
 .header{
@@ -166,22 +104,23 @@ html {
     text-align: left;
     margin-top: 30px;
 }
-.text-box h1{
-    font-size: 70px;
+h1 {
+    font-size: 5rem;
     color: white;
 }
 .p1 {
-    font-size: 50px;
+    font-size: 2rem;
     color: white;
     margin-top: 10px;
     line-height: 2;
 }
-.p2{
-    font-size: 30px;
+.p2 {
+    font-size: 1.8rem;
     color: lightblue;
     margin-bottom: 10px;
     line-height: 2;
 }
+/*---------------------------------------------------------------------*/
 
 /*---about-header---*/
 .about-header {
@@ -214,10 +153,11 @@ html {
     transform: translate(-12%, -7%);
     text-align: left;
 }
-.about-box h2 {
-    font-size: 80px;
+h2 {
+    font-size: 5rem;
     color: white;
 }
+/*---------------------------------------------------------------------*/
 
 /*---skills-header---*/
 .skills-header {
@@ -250,10 +190,11 @@ html {
     transform: translate(-12%, -7%);
     text-align: left;
 }
-.skills-box h4 {
-    font-size: 80px;
+h3 {
+    font-size: 5rem;
     color: white;
 }
+/*---------------------------------------------------------------------*/
 
 /*---projects-header---*/
 .projects-header {
@@ -286,10 +227,11 @@ html {
     transform: translate(-12%, -7%);
     text-align: left;
 }
-.projects-box h3 {
-    font-size: 80px;
+h4 {
+    font-size: 5rem;
     color: white;
 }
+/*---------------------------------------------------------------------*/
 
 /*---NavBar---*/
 nav{
@@ -309,7 +251,7 @@ nav{
     animation-fill-mode: forwards;
 }
 nav img{
-    width: 150px;
+    width: 125px;
 }
 .nav-links{
     flex: 1;

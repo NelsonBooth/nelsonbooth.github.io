@@ -60,7 +60,7 @@ const App = () => {
       <section id="skills" className="skills-header">
 
         <div class="skills-box">
-            <h4>My Skills</h4>
+            <h3>My Skills</h3>
         </div>
 
       </section>
@@ -68,7 +68,7 @@ const App = () => {
       <section id="projects" className="projects-header">
 
         <div class="projects-box">
-            <h3>Browse My Projects</h3>
+            <h4>Browse My Projects</h4>
         </div>
 
       </section>
